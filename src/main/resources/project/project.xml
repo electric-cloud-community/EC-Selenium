@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exportedData version="39" buildLabel="" buildVersion="3.5.0.0">
+  <exportPath>/projects/@PLUGIN_KEY@-@PLUGIN_VERSION@</exportPath>
+  <project>
+    <projectName>@PLUGIN_KEY@-@PLUGIN_VERSION@</projectName>
+    <propertySheet>
+        <!-- Improvement for ECPTESTSELENIUM-14 -->
+        <property>
+            <propertyName>ec_icon</propertyName>
+            <value>images/icon-plugin.svg</value>
+        </property>
+        <!-- End of improvement for ECPTESTSELENIUM-14 -->
+        <property>
+        <propertyName>scripts</propertyName>
+        <description></description>
+        <propertySheet>
+          <property>
+            <propertyName>seleniumDriver</propertyName>
+            <description></description>
+            <expandable>1</expandable>
+            <value></value>
+          </property>
+        </propertySheet>
+      </property>
+            
+      <property>
+        <propertyName>ec_setup</propertyName>
+        <value></value>
+        <expandable>0</expandable>
+      </property>
+      
+      <property>
+        <propertyName>postp_matchers</propertyName>
+        <value></value>
+        <expandable>0</expandable>
+      </property>
+      
+      <property>
+        <propertyName>ec_visibility</propertyName>
+        <description></description>
+        <expandable>1</expandable>
+        <value>pickListOnly</value>
+      </property>        
+      
+	</propertySheet>
+
+    <procedure>
+      <procedureName>runSelenium</procedureName>
+      <description>runs Selenium Server</description>
+      <jobNameTemplate></jobNameTemplate>
+      <resourceName></resourceName>
+      <workspaceName></workspaceName>
+      <projectName>EC-Selenium</projectName>
+      <propertySheet>
+	  <property>
+			<propertyName>ec_parameterForm</propertyName>    
+			<expandable>1</expandable>
+			<value></value>
+		</property>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <propertySheet>
+            <property>
+              <propertyName>parameters</propertyName>
+              
+              <propertySheet>
+              
+              	<property>
+                  <propertyName>workingdirectory</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>javapath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>installpath</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>timeout</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>port</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>                
+                
+                <property>
+                  <propertyName>logfile</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>additionalcommands</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>browser</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                 <property>
+                  <propertyName>starturl</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>  
+                
+                <property>
+                  <propertyName>resultfile</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>suitefile</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+              </propertySheet>
+              
+            </property>
+          </propertySheet>
+        </property>
+      </propertySheet>
+      
+	  <formalParameter>
+        <formalParameterName>workingdirectory</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Indicate the desired working directory. Leave blank to use the default workspace.</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+
+      <formalParameter>
+        <formalParameterName>javapath</formalParameterName>
+        <defaultValue>java</defaultValue>
+        <description>Provide the path where java.exe is installed. Default value is java, which assumes it is loaded in the system path.</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>installpath</formalParameterName>
+        <defaultValue>selenium-server.jar</defaultValue>
+        <description>Provide the path where Selenium is installed. If no value is provided 'selenium-server.jar' is used.</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>additionalcommands</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Provide any additional commands for Selenium, written as if they were typed in the console.</description>
+        <required>0</required>
+        <type>textarea</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>browser</formalParameterName>
+        <description>Indicate the web browser to use.(This is the command-line '-htmlSuite ' option)</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      
+      <formalParameter>
+        <formalParameterName>starturl</formalParameterName>
+        <description>Provide the URL to apply the tests to.(This is the command-line '-htmlSuite ' option)</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>logfile</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Provide a name for the log file. (This is the command-line '-log ' option)</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>resultfile</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Name the file where results will be saved. Do not indicate a path for the resultfile. To see the results clic in Selenium Test Results link on the Links section of the Job Details.(This is the command-line '-htmlSuite ' option)</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>      
+      
+      <formalParameter>
+        <formalParameterName>suitefile</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Provide the absolute path to the file that contains the suite tests.(This is the command-line '-htmlSuite ' option)</description>
+        <required>1</required>
+        <type>entry</type>
+      </formalParameter>
+   
+       <formalParameter>
+        <formalParameterName>timeout</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Indicate the number of seconds before giving up on a process. (This is the command-line '-timeout' option)</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>port</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Indicate the port to use, default is 4444. (This is the command-line '-port ' option)</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+
+      
+      <step>
+        <stepName>createCommandLine</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[/projects/$[/plugins/EC-Selenium/projectName]/scripts/seleniumDriver];</command>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusive>0</exclusive>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp</postProcessor>
+        <releaseExclusive>0</releaseExclusive>
+        <resourceName></resourceName>
+        <retries>0</retries>
+        <shell>ec-perl</shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <workingDirectory></workingDirectory>
+        <workspaceName></workspaceName>
+        <procedureName>runSelenium</procedureName>
+        <projectName>EC-Selenium</projectName>
+        <propertySheet>
+          <property>
+            <propertyName>ec_customEditorData</propertyName>
+            <propertySheet>
+              <property>
+                <propertyName>formType</propertyName>
+                <expandable>1</expandable>
+                <value>command</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+      </step>
+      
+      <step>
+        <stepName>runCommandLine</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[/myCall/commandLine]</command>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusive>0</exclusive>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp</postProcessor>
+        <releaseExclusive>0</releaseExclusive>
+        <resourceName></resourceName>
+        <retries>0</retries>
+        <shell></shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <workingDirectory>$[workingdirectory]</workingDirectory>
+        <workspaceName></workspaceName>
+        <procedureName>runSelenium</procedureName>
+        <projectName>EC-Selenium</projectName>
+        <propertySheet>
+          <property>
+            <propertyName>ec_customEditorData</propertyName>
+            <propertySheet>
+              <property>
+                <propertyName>formType</propertyName>
+                <expandable>1</expandable>
+                <value>command</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+      </step>
+    </procedure>
+  </project>
+</exportedData>

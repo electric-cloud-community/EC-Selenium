@@ -1,0 +1,100 @@
+    <editor>
+
+        <label>Invoke Selenium</label>
+		<description>Executes Selenium RC</description>
+		<help>https://docs.cloudbees.com/docs/cloudbees-cd/latest/plugins/ec-selenium#runSelenium</help>
+		
+        <formElement>
+            <type>entry</type>
+            <label>Java installation path:</label>
+            <property>javapath</property>
+            <required>1</required>
+            <value>java</value>
+            <documentation>Provide the path where java.exe is installed. Default value is java, which assumes it is loaded in the system path.</documentation>
+        </formElement>
+
+        <formElement>
+            <type>entry</type>
+            <label>Selenium installation path:</label>
+            <property>installpath</property>
+            <required>1</required>
+            <value>selenium-server.jar</value>
+            <documentation>Provide the path where Selenium is installed. If no value is provided 'selenium-server.jar' is used.</documentation>
+        </formElement>
+		
+		        <formElement>
+            <type>entry</type>
+            <label>Browser:</label>
+            <property>browser</property>
+            <value>firefox</value>
+            <required>1</required>
+            <documentation>Indicate the web browser to use.(This is the command-line '-htmlSuite ' option)</documentation>
+        </formElement>
+        
+        <formElement>
+            <type>entry</type>
+            <label>Start URL:</label>
+            <property>starturl</property>
+            <required>1</required>
+            <documentation>Provide the URL to apply the tests to.(This is the command-line '-htmlSuite ' option)</documentation>
+        </formElement>
+
+        <formElement>
+            <type>entry</type>
+            <label>Suite file:</label>
+            <property>suitefile</property>
+            <required>1</required>
+            <documentation>Provide the absolute path to the file that contains the suite tests.(This is the command-line '-htmlSuite ' option)</documentation>
+        </formElement>
+        
+        <formElement>
+            <type>entry</type>
+            <label>Result file:</label>
+            <property>resultfile</property>
+            <required>1</required>
+            <documentation>Name the file where results will be saved. Do not indicate a path for the resultfile. To see the results clic in Selenium Test Results link on the Links section of the Job Details.(This is the command-line '-htmlSuite ' option)</documentation>
+        </formElement>
+        
+         <formElement>
+            <type>entry</type>
+            <label>Log file:</label>
+            <property>logfile</property>
+            <required>0</required>
+            <value></value>
+            <documentation>Provide a name for the log file. (This is the command-line '-log ' option)</documentation>
+        </formElement>    
+        
+        <formElement>
+            <type>entry</type>
+            <label>Port:</label>
+            <property>port</property>
+            <required>0</required>
+            <documentation>Indicate the port to use, default is 4444. (This is the command-line '-port ' option)</documentation>
+        </formElement>
+        
+        <formElement>
+            <type>entry</type>
+            <label>Timeout:</label>
+            <property>timeout</property>
+            <required>0</required>
+            <documentation>Indicate the number of seconds before giving up on a process. (This is the command-line '-timeout' option)</documentation>
+        </formElement>        
+                
+        <formElement>
+            <type>textarea</type>
+            <label>Additional parameters:</label>
+            <property>additionalcommands</property>
+            <required>0</required>
+            <documentation>Provide any additional commands for Selenium, written as if they were typed in the console.</documentation>
+        </formElement>
+
+         <formElement>
+            <type>entry</type>
+            <label>Working directory:</label>
+            <property>workingdirectory</property>
+            <required>0</required>
+            <value></value>
+            <documentation>Indicate the desired working directory. Leave blank to use the default workspace</documentation>
+        </formElement>    
+
+    </editor>
