@@ -14,7 +14,7 @@
         	
         </component>
     </components>
-    <hasAdoc>true</hasAdoc>
+    <repositoryUrl>https://github.com/electric-cloud-community/EC-Selenium/</repositoryUrl>
     <catalogLabel>Selenium</catalogLabel>
     <detailedDescription>Selenium is a set of tools that supports the development of test automation for web-based applications. Selenium server can record and execute steps and assertions over web pages in order to validate and test an application. This plugin wraps the Selenium server so you can execute an HTML suite run.</detailedDescription>
 </plugin>
